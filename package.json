@@ -1,0 +1,31 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc --outDir dist ",
+    "start": "node ./dist/src/index.js",
+    "test": "jest --runInBand",
+    "test-compact": "jest 2>&1 | grep '●'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/ramda": "^0.28.20",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "fp-ts": "^2.13.1",
+    "ramda": "^0.28.0",
+    "zod": "^3.19.1"
+  }
+}
